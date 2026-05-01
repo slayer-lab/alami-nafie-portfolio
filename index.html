@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nafie Alami — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">NA<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#formation">Formation</a></li>
+        <li><a href="#experiences">Expériences</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact" class="btn-nav">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#apropos">À propos</a>
+      <a href="#formation">Formation</a>
+      <a href="#experiences">Expériences</a>
+      <a href="#competences">Compétences</a>
+      <a href="#projets">Projets</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content" data-aos="fade-right">
+        <p class="hero-greeting">Bonjour, je suis</p>
+        <h1 class="hero-name">Nafie <span class="accent">Alami</span></h1>
+        <div class="hero-typed-wrapper">
+          <span class="hero-typed" id="typedText"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-description">
+          Ingénieur en Génie Industriel &amp; Logistique, en recherche d'une 
+          <strong>alternance d'un an (2026–2027)</strong> dans le cadre de mon 
+          M2 OPSyL à l'Université de Lorraine. Passionné par l'optimisation 
+          des systèmes logistiques et les outils d'aide à la décision.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Me contacter</a>
+          <a href="ALAMI_NAFIE.pdf" target="_blank" class="btn btn-outline">
+            <i class="fas fa-file-pdf"></i> Voir le CV
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://linkedin.com/in/nafie-alami/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:Nafieddhy@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="tel:+33757840139" aria-label="Téléphone">
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper" data-aos="fade-left">
+        <div class="hero-image-frame">
+          <img src="assets/image.jpeg" alt="Nafie Alami" class="hero-photo" />
+          <div class="hero-image-border"></div>
+        </div>
+        <div class="hero-badge badge-1">
+          <i class="fas fa-industry"></i>
+          <span>Génie Industriel</span>
+        </div>
+        <div class="hero-badge badge-2">
+          <i class="fas fa-boxes-stacked"></i>
+          <span>Logistique</span>
+        </div>
+        <div class="hero-badge badge-3">
+          <i class="fas fa-chart-line"></i>
+          <span>Supply Chain</span>
+        </div>
+      </div>
+    </div>
+    <a href="#apropos" class="scroll-indicator" aria-label="Défiler vers le bas">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- ========== À PROPOS ========== -->
+  <section id="apropos" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">01 — À propos</span>
+        <h2 class="section-title">Qui suis-je <span class="accent">?</span></h2>
+      </div>
+      <div class="apropos-grid">
+        <div class="apropos-text" data-aos="fade-right">
+          <p>
+            Passionné par l'industrie et la logistique, je suis ingénieur en 
+            <strong>Génie Industriel &amp; Logistique</strong> formé à l'ENSET de Mohammedia. 
+            Actuellement en M2 OPSyL à l'Université de Lorraine, je cherche à mettre 
+            mes compétences au service d'une entreprise dynamique dans le cadre d'une 
+            <strong>alternance d'un an à partir de septembre 2026</strong>.
+          </p>
+          <p>
+            Mon parcours m'a permis d'acquérir une solide expérience en 
+            <strong>optimisation des flux</strong>, en <strong>systèmes d'information logistiques</strong> 
+            (WMS, ERP) et en <strong>amélioration continue</strong>. J'ai notamment développé 
+            une application WMS sous Flask et déployé un système Mizusumashi 
+            lors de mes stages.
+          </p>
+          <p>
+            À l'aise aussi bien sur le terrain que sur les outils de pilotage 
+            (SAP, Power BI, Python), je combine rigueur analytique et sens pratique 
+            pour apporter des solutions concrètes aux problèmes industriels.
+          </p>
+          <div class="apropos-infos">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt accent"></i>
+              <span>Metz, France</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-graduation-cap accent"></i>
+              <span>M2 OPSyL — Université de Lorraine</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-calendar-alt accent"></i>
+              <span>22 ans</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-car accent"></i>
+              <span>Permis B</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope accent"></i>
+              <span>Nafieddhy@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone accent"></i>
+              <span>+33 7 57 84 01 39</span>
+            </div>
+          </div>
+        </div>
+        <div class="apropos-stats" data-aos="fade-left">
+          <div class="stat-card">
+            <div class="stat-number">3<span class="accent">+</span></div>
+            <div class="stat-label">Stages professionnels</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">6<span class="accent">+</span></div>
+            <div class="stat-label">Projets académiques</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">5<span class="accent">+</span></div>
+            <div class="stat-label">Années d'études</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">3<span class="accent"></span></div>
+            <div class="stat-label">Langues maîtrisées</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FORMATION ========== -->
+  <section id="formation" class="section section-dark">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">02 — Formation</span>
+        <h2 class="section-title">Parcours <span class="accent">académique</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-date">2026 – 2027</span>
+              <span class="timeline-badge current">En cours</span>
+            </div>
+            <h3>M2 OPSyL</h3>
+            <h4>Optimisation et Pilotage des Systèmes Logistiques</h4>
+            <p class="timeline-school">
+              <i class="fas fa-university"></i>
+              Université de Lorraine — UFR MIM, Sarreguemines
+            </p>
+            <p>
+              Formation de haut niveau axée sur la modélisation, la simulation et 
+              l'optimisation des systèmes logistiques. Approfondissement des méthodes 
+              quantitatives et des outils d'aide à la décision.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-date">2023 – 2026</span>
+            </div>
+            <h3>Cycle Ingénieur</h3>
+            <h4>Génie Industriel et Logistique</h4>
+            <p class="timeline-school">
+              <i class="fas fa-university"></i>
+              École Normale Supérieure de l'Enseignement Technique — ENSET, Mohammedia
+            </p>
+            <p>
+              Formation d'ingénieur polyvalente couvrant la gestion de production, 
+              la maintenance industrielle, la supply chain, la qualité et les systèmes 
+              d'information. Nombreux projets appliqués et stages en entreprise.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-date">2021 – 2023</span>
+            </div>
+            <h3>CPGE — Mathématiques et Physique</h3>
+            <h4>Diplôme Bac+2</h4>
+            <p class="timeline-school">
+              <i class="fas fa-university"></i>
+              Classes Préparatoires aux Grandes Écoles — Centre IBN GHAZI, Rabat
+            </p>
+            <p>
+              Formation préparatoire intensive en mathématiques, physique et sciences 
+              de l'ingénieur, renforçant la rigueur analytique et la capacité 
+              à résoudre des problèmes complexes.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-date">2020 – 2021</span>
+            </div>
+            <h3>Baccalauréat — Mention Bien</h3>
+            <h4>Sciences Mathématiques voie A, option française</h4>
+            <p class="timeline-school">
+              <i class="fas fa-school"></i>
+              Lycée Prince Moulay Rachid, Chefchaouen
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Certifications -->
+      <div class="certifs-container" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="certifs-title">Certifications</h3>
+        <div class="certifs-grid">
+          <div class="certif-card">
+            <div class="certif-icon"><i class="fas fa-certificate"></i></div>
+            <div class="certif-info">
+              <h4>Lean Six Sigma Green Belt</h4>
+              <p>Udemy</p>
+            </div>
+          </div>
+          <div class="certif-card">
+            <div class="certif-icon"><i class="fas fa-certificate"></i></div>
+            <div class="certif-info">
+              <h4>Business Processes in SAP S/4HANA</h4>
+              <p>Sourcing and Procurement — SAP</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== EXPÉRIENCES ========== -->
+  <section id="experiences" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">03 — Expériences</span>
+        <h2 class="section-title">Expériences <span class="accent">professionnelles</span></h2>
+      </div>
+      <div class="exp-grid">
+
+        <div class="exp-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="exp-card-header">
+            <div class="exp-icon">
+              <i class="fas fa-industry"></i>
+            </div>
+            <div class="exp-meta">
+              <span class="exp-type">Stage Fin d'études</span>
+              <span class="exp-date"><i class="fas fa-calendar"></i> Fév. 2026 – Juin 2026</span>
+              <span class="exp-location"><i class="fas fa-map-marker-alt"></i> Ain Johra</span>
+            </div>
+          </div>
+          <h3 class="exp-title">Ingénieur Méthode</h3>
+          <h4 class="exp-company">Tuyauto New Mobility</h4>
+          <ul class="exp-tasks">
+            <li>Déploiement d'un système <strong>Mizusumashi</strong> pour optimiser l'approvisionnement des lignes de production</li>
+            <li>Analyse des flux par <strong>VSM, 5 WHY, ISHIKAWA, QQOQCP, Pareto</strong></li>
+            <li>Dimensionnement du train logistique</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="tag">VSM</span>
+            <span class="tag">Lean</span>
+            <span class="tag">Mizusumashi</span>
+            <span class="tag">ISHIKAWA</span>
+            <span class="tag">5 WHY</span>
+          </div>
+        </div>
+
+        <div class="exp-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="exp-card-header">
+            <div class="exp-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="exp-meta">
+              <span class="exp-type">Stage d'ingénieur</span>
+              <span class="exp-date"><i class="fas fa-calendar"></i> Juin 2025 – Août 2025</span>
+              <span class="exp-location"><i class="fas fa-map-marker-alt"></i> Casablanca</span>
+            </div>
+          </div>
+          <h3 class="exp-title">Consultant Fonctionnel WMS</h3>
+          <h4 class="exp-company">Pragmatic Consulting</h4>
+          <ul class="exp-tasks">
+            <li>Conception et développement d'une application <strong>WMS sous Flask</strong> (Python, SQLite3) assurant la traçabilité des flux logistiques</li>
+            <li>Optimisation du slotting par modélisation mathématique <strong>MILP</strong></li>
+          </ul>
+          <div class="exp-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">SQLite3</span>
+            <span class="tag">WMS</span>
+            <span class="tag">MILP</span>
+          </div>
+        </div>
+
+        <div class="exp-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="exp-card-header">
+            <div class="exp-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <div class="exp-meta">
+              <span class="exp-type">Stage d'ingénieur</span>
+              <span class="exp-date"><i class="fas fa-calendar"></i> Juil. 2024 – Août 2024</span>
+              <span class="exp-location"><i class="fas fa-map-marker-alt"></i> Casablanca</span>
+            </div>
+          </div>
+          <h3 class="exp-title">Assistant Logistique</h3>
+          <h4 class="exp-company">GEODIS CL</h4>
+          <ul class="exp-tasks">
+            <li>Analyse des opérations <strong>supply chain</strong> et contribution au suivi des flux logistiques</li>
+            <li>Participation à la gestion logistique globale de l'entrepôt</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="tag">Supply Chain</span>
+            <span class="tag">Logistique</span>
+            <span class="tag">Entrepôt</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COMPÉTENCES ========== -->
+  <section id="competences" class="section section-dark">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">04 — Compétences</span>
+        <h2 class="section-title">Mes <span class="accent">compétences</span></h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Hard Skills -->
+        <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+          <div class="skills-cat-icon"><i class="fas fa-cogs"></i></div>
+          <h3>Compétences techniques</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Gestion de la production</span><span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Amélioration continue (5S, AMDEC, VSM…)</span><span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Gestion des stocks &amp; Supply Chain</span><span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Planification (MRP II, CBN, JAT)</span><span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Fiabilité &amp; Maintenance</span><span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Contrôle qualité (MSP, cartes de contrôle)</span><span class="skill-pct">78%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Gestion de projets</span><span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Outils & Logiciels -->
+        <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+          <div class="skills-cat-icon"><i class="fas fa-tools"></i></div>
+          <h3>Outils &amp; Logiciels</h3>
+          <div class="tools-grid">
+            <div class="tool-chip">
+              <i class="fas fa-database"></i> SAP S/4HANA
+            </div>
+            <div class="tool-chip">
+              <i class="fas fa-box"></i> Odoo ERP
+            </div>
+            <div class="tool-chip">
+              <i class="fas fa-chart-bar"></i> Power BI
+            </div>
+            <div class="tool-chip">
+              <i class="fas fa-table"></i> Excel / VBA
+            </div>
+            <div class="tool-chip">
+              <i class="fas fa-wrench"></i> Optimaint GMAO
+            </div>
+            <div class="tool-chip">
+              <i class="fas fa-flask"></i> Arena Rockwell
+            </div>
+            <div class="tool-chip">
+              <i class="fab fa-python"></i> Python
+            </div>
+            <div class="tool-chip">
+              <i class="fas fa-database"></i> SQL
+            </div>
+            <div class="tool-chip">
+              <i class="fas fa-terminal"></i> Linux
+            </div>
+            <div class="tool-chip">
+              <i class="fas fa-code"></i> MATLAB
+            </div>
+            <div class="tool-chip">
+              <i class="fas fa-server"></i> Flask
+            </div>
+            <div class="tool-chip">
+              <i class="fas fa-file-alt"></i> MS Project
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+          <div class="skills-cat-icon"><i class="fas fa-brain"></i></div>
+          <h3>Soft Skills</h3>
+          <div class="softskills-list">
+            <div class="softskill-item">
+              <i class="fas fa-check-circle accent"></i>
+              <span>Planification et gestion efficace des tâches</span>
+            </div>
+            <div class="softskill-item">
+              <i class="fas fa-check-circle accent"></i>
+              <span>Leadership et esprit d'initiative</span>
+            </div>
+            <div class="softskill-item">
+              <i class="fas fa-check-circle accent"></i>
+              <span>Esprit analytique et résolution de problèmes</span>
+            </div>
+            <div class="softskill-item">
+              <i class="fas fa-check-circle accent"></i>
+              <span>Collaboration et travail en équipe</span>
+            </div>
+            <div class="softskill-item">
+              <i class="fas fa-check-circle accent"></i>
+              <span>Adaptabilité et autonomie</span>
+            </div>
+            <div class="softskill-item">
+              <i class="fas fa-check-circle accent"></i>
+              <span>Gestion du temps et organisation</span>
+            </div>
+            <div class="softskill-item">
+              <i class="fas fa-check-circle accent"></i>
+              <span>Communication claire et impactante</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Langues -->
+        <div class="skills-category" data-aos="fade-up" data-aos-delay="400">
+          <div class="skills-cat-icon"><i class="fas fa-language"></i></div>
+          <h3>Langues</h3>
+          <div class="lang-list">
+            <div class="lang-item">
+              <div class="lang-flag">🇲🇦</div>
+              <div class="lang-info">
+                <span class="lang-name">Arabe</span>
+                <span class="lang-level native">Langue maternelle</span>
+              </div>
+              <div class="lang-dots">
+                <span class="dot filled"></span><span class="dot filled"></span>
+                <span class="dot filled"></span><span class="dot filled"></span>
+                <span class="dot filled"></span>
+              </div>
+            </div>
+            <div class="lang-item">
+              <div class="lang-flag">🇫🇷</div>
+              <div class="lang-info">
+                <span class="lang-name">Français</span>
+                <span class="lang-level fluent">Courant</span>
+              </div>
+              <div class="lang-dots">
+                <span class="dot filled"></span><span class="dot filled"></span>
+                <span class="dot filled"></span><span class="dot filled"></span>
+                <span class="dot filled"></span>
+              </div>
+            </div>
+            <div class="lang-item">
+              <div class="lang-flag">🇬🇧</div>
+              <div class="lang-info">
+                <span class="lang-name">Anglais</span>
+                <span class="lang-level advanced">Avancé</span>
+              </div>
+              <div class="lang-dots">
+                <span class="dot filled"></span><span class="dot filled"></span>
+                <span class="dot filled"></span><span class="dot filled"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJETS ========== -->
+  <section id="projets" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">05 — Projets</span>
+        <h2 class="section-title">Projets <span class="accent">réalisés</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-card-inner">
+            <div class="project-icon"><i class="fas fa-robot"></i></div>
+            <div class="project-content">
+              <h3>Système de détection IA (YOLOv8)</h3>
+              <p class="project-context">Projet innovant — ENSET Mohammedia</p>
+              <p>
+                Conception d'un modèle d'intelligence artificielle en Python basé sur 
+                <strong>YOLOv8</strong>, avec implantation d'une signalisation dynamique 
+                (LEDs, buzzer, Raspberry Pi) réactive en temps réel aux situations critiques.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">YOLOv8</span>
+                <span class="tag">Raspberry Pi</span>
+                <span class="tag">IA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="project-card-inner">
+            <div class="project-icon"><i class="fas fa-boxes-stacked"></i></div>
+            <div class="project-content">
+              <h3>Application WMS sous Flask</h3>
+              <p class="project-context">Stage — Pragmatic Consulting, Casablanca</p>
+              <p>
+                Développement d'une application WMS complète avec traçabilité des flux 
+                logistiques et optimisation du <strong>slotting par modélisation MILP</strong>.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">SQLite3</span>
+                <span class="tag">MILP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card-inner">
+            <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="project-content">
+              <h3>Atelier Odoo + Power BI + VBA</h3>
+              <p class="project-context">Projet académique — ENSET Mohammedia</p>
+              <p>
+                Implantation et lancement d'un atelier d'assemblage de boîtiers 
+                électriques sous <strong>Odoo ERP</strong>, avec tableau de bord 
+                sous <strong>Power BI</strong> et automatisations Excel VBA.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Odoo</span>
+                <span class="tag">Power BI</span>
+                <span class="tag">Excel VBA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="project-card-inner">
+            <div class="project-icon"><i class="fas fa-plane"></i></div>
+            <div class="project-content">
+              <h3>Simulation d'un système aéronautique</h3>
+              <p class="project-context">Projet académique — ENSET Mohammedia</p>
+              <p>
+                Modélisation et simulation d'un système de production aéronautique 
+                avec <strong>Arena Rockwell</strong> et conception d'un tableau 
+                de bord de performance.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Arena Rockwell</span>
+                <span class="tag">Simulation</span>
+                <span class="tag">Power BI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-card-inner">
+            <div class="project-icon"><i class="fas fa-fire"></i></div>
+            <div class="project-content">
+              <h3>Analyse AMDEC — Four rotatif cimenterie</h3>
+              <p class="project-context">Projet académique — ENSET Mohammedia</p>
+              <p>
+                Analyse <strong>AMDEC</strong> complète du four rotatif d'une cimenterie, 
+                identification des modes de défaillance critiques et proposition de 
+                plans de maintenance préventive.
+              </p>
+              <div class="project-tags">
+                <span class="tag">AMDEC</span>
+                <span class="tag">Maintenance</span>
+                <span class="tag">Fiabilité</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="350">
+          <div class="project-card-inner">
+            <div class="project-icon"><i class="fas fa-lightbulb"></i></div>
+            <div class="project-content">
+              <h3>Éclairage naturel par fibre optique</h3>
+              <p class="project-context">TIPE — CPGE IBN GHAZI, Rabat</p>
+              <p>
+                Conception d'une solution d'éclairage naturel par fibre optique alliant 
+                haute efficacité énergétique et optimisation des coûts. Validation de la 
+                viabilité technique et économique du projet.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Innovation</span>
+                <span class="tag">Énergie</span>
+                <span class="tag">Fibre optique</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ENGAGEMENT & LOISIRS ========== -->
+  <section id="engagement" class="section section-dark">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">06 — Engagement</span>
+        <h2 class="section-title">Vie associative <span class="accent">&amp; loisirs</span></h2>
+      </div>
+      <div class="engage-grid">
+        <div class="engage-card" data-aos="fade-right">
+          <div class="engage-icon"><i class="fas fa-users"></i></div>
+          <h3>Engagement associatif</h3>
+          <p class="engage-org">ENSET Mohammedia — 2023–2026</p>
+          <ul>
+            <li><strong>Club GILACTORS</strong> — Membre actif, organisation d'événements industriels</li>
+            <li><strong>JLM</strong> — Membre actif, journée de sensibilisation contre les addictions et promotion de l'orientation scolaire</li>
+          </ul>
+        </div>
+        <div class="engage-card" data-aos="fade-left">
+          <div class="engage-icon"><i class="fas fa-dumbbell"></i></div>
+          <h3>Sports &amp; Loisirs</h3>
+          <div class="hobbies-list">
+            <div class="hobby-item">
+              <i class="fas fa-dumbbell accent"></i>
+              <span>Musculation</span>
+            </div>
+            <div class="hobby-item">
+              <i class="fas fa-futbol accent"></i>
+              <span>Sports collectifs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">07 — Contact</span>
+        <h2 class="section-title">Prenons <span class="accent">contact</span></h2>
+        <p class="section-subtitle">
+          Vous souhaitez discuter d'une opportunité d'alternance ou d'un projet ? 
+          N'hésitez pas à me contacter !
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:Nafieddhy@gmail.com" class="contact-value">Nafieddhy@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <p class="contact-label">Téléphone</p>
+              <a href="tel:+33757840139" class="contact-value">+33 7 57 84 01 39</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <p class="contact-label">Localisation</p>
+              <span class="contact-value">Metz, France</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <a href="https://linkedin.com/in/nafie-alami/" target="_blank" class="contact-value">linkedin.com/in/nafie-alami</a>
+            </div>
+          </div>
+          <a href="ALAMI_NAFIE.pdf" target="_blank" class="btn btn-primary btn-full">
+            <i class="fas fa-download"></i> Télécharger mon CV
+          </a>
+        </div>
+        <form class="contact-form" id="contactForm" data-aos="fade-left">
+          <div class="form-group">
+            <label for="name">Nom complet</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Objet</label>
+            <input type="text" id="subject" name="subject" placeholder="Opportunité d'alternance…" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Envoyer le message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MAIL CLIENT OVERLAY ========== -->
+  <div id="mailOverlay" class="mail-overlay" role="dialog" aria-modal="true" aria-label="Choisir un client mail">
+    <div class="mail-overlay-box">
+      <button id="btnOverlayClose" class="overlay-close" aria-label="Fermer"><i class="fas fa-times"></i></button>
+      <div class="overlay-icon"><i class="fas fa-paper-plane"></i></div>
+      <h3>Ouvrir dans…</h3>
+      <p>Votre message a été préparé. Choisissez comment l'envoyer&nbsp;:</p>
+      <div class="overlay-btns">
+        <button id="btnGmail" class="btn btn-primary">
+          <i class="fab fa-google"></i> Gmail (web)
+        </button>
+        <button id="btnMailto" class="btn btn-outline">
+          <i class="fas fa-envelope"></i> Client mail (Outlook…)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-logo">NA<span class="accent">.</span></div>
+      <p class="footer-text">Nafie Alami — Ingénieur Génie Industriel &amp; Logistique</p>
+      <div class="footer-socials">
+        <a href="https://linkedin.com/in/nafie-alami/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:Nafieddhy@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+33757840139" aria-label="Téléphone">
+          <i class="fas fa-phone"></i>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Nafie Alami. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
