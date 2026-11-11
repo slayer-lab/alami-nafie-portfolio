@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nafie Alami — Data, SAP &amp; Power BI</title>
+  <meta name="description" content="Nafie Alami, ingénieur Génie Industriel &amp; Logistique (M2 OPSyL). Profil data et ERP : Power BI, SAP S/4HANA, Odoo, Python, SQL, Excel VBA. Stage de 6 mois dès janvier 2027." />
+  <meta name="theme-color" content="#252423" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nafie Alami — le rapport (Data · SAP · Power BI)" />
+  <meta property="og:description" content="Explorez mon profil comme un rapport : filtres par outil, modèle de données, requête SQL. Stage de 6 mois dès janvier 2027." />
+  <meta property="og:image" content="assets/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Écran d'ouverture façon ERP ===== -->
+  <div class="boot" id="boot" aria-hidden="true">
+    <div class="boot-win">
+      <div class="boot-title mono"><span class="boot-sq"></span> <span data-i18n="boot.title">Accès au système — profil candidat</span></div>
+      <div class="boot-body">
+        <label class="mono boot-lbl" data-i18n="boot.tx">Transaction</label>
+        <div class="boot-field mono"><span id="bootType"></span><span class="caret"></span></div>
+        <p class="mono boot-status" id="bootStatus">&nbsp;</p>
+        <div class="boot-bar"><i id="bootBar"></i></div>
+      </div>
+      <button class="boot-skip mono" id="bootSkip" data-i18n="boot.skip">Passer ↵</button>
+    </div>
+  </div>
+
+  <!-- ===== Barre d'application ===== -->
+  <header class="appbar">
+    <a href="#overview" class="app-logo" aria-label="Accueil">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="11" width="4" height="10" rx="1"/><rect x="10" y="6" width="4" height="15" rx="1"/><rect x="17" y="2" width="4" height="19" rx="1"/></svg>
+    </a>
+    <p class="app-file"><b>Nafie_Alami</b><span>_rapport.pbix</span></p>
+    <form class="tcode" id="tcode" autocomplete="off">
+      <label for="tcodeInput" class="sr-only">Transaction</label>
+      <span class="mono tc-prefix">/n</span>
+      <input id="tcodeInput" class="mono" type="text" spellcheck="false" placeholder="PROJETS, SAP, CONTACT…" />
+      <button class="tc-go" aria-label="Exécuter">↵</button>
+      <p class="tc-msg mono" id="tcodeMsg"></p>
+    </form>
+    <div class="app-actions">
+      <button class="chip-btn mono" id="langBtn" aria-label="Langue"><span class="on">FR</span> / <span>EN</span></button>
+      <a class="btn btn-yellow" href="CV_Nafie_ALAMI.pdf" target="_blank" rel="noopener"><span class="cv-long" data-i18n="top.cv">Exporter le CV</span><span class="cv-short">CV</span></a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- ===== Volet des pages ===== -->
+    <nav class="pages" id="pages" aria-label="Pages du rapport">
+      <p class="pages-h mono" data-i18n="nav.h">Pages</p>
+      <a href="#overview" class="active"><span class="pg-ic">▦</span><span data-i18n="nav.1">Accueil</span></a>
+      <a href="#explorer"><span class="pg-ic">⧩</span><span data-i18n="nav.2">Explorer</span></a>
+      <a href="#parcours"><span class="pg-ic">▤</span><span data-i18n="nav.3">Parcours</span></a>
+      <a href="#matrice"><span class="pg-ic">▩</span><span data-i18n="nav.4">Compétences</span></a>
+      <a href="#modele"><span class="pg-ic">✣</span><span data-i18n="nav.5">Modèle</span></a>
+      <a href="#contact"><span class="pg-ic">❯_</span><span data-i18n="nav.6">Requête</span></a>
+    </nav>
+
+    <main class="canvas">
+
+      <!-- ===== Page 1 : vue d'ensemble ===== -->
+      <section class="page" id="overview">
+        <header class="page-h">
+          <h1 class="page-title"><span data-i18n="ov.title">Vue d'ensemble</span></h1>
+          <p class="page-meta mono"><span data-i18n="ov.refresh">Dernière actualisation</span> : <span id="refreshDate"></span></p>
+        </header>
+
+        <div class="grid-ov">
+          <article class="visual profile">
+            <img src="assets/photo.jpg" alt="Nafie Alami" width="600" height="600" />
+            <div>
+              <h2>Nafie Alami</h2>
+              <p class="profile-role" data-i18n="ov.role">Ingénieur Génie Industriel &amp; Logistique · profil Data &amp; ERP</p>
+              <p class="profile-txt" data-i18n-html="ov.txt">En M2 OPSyL à l'Université de Lorraine. Je transforme des données d'exploitation en décisions : tableaux de bord <b>Power BI</b>, processus <b>SAP S/4HANA</b> et <b>Odoo</b>, outils en <b>Python</b>, <b>SQL</b> et <b>Excel VBA</b>.</p>
+              <p class="status"><span class="dot"></span><span data-i18n-html="ov.status"><b>Disponible</b> · stage de 6 mois · janvier 2027</span></p>
+            </div>
+          </article>
+
+          <article class="visual card-kpi"><p class="k-v"><span class="count" data-to="3">0</span></p><p class="k-l" data-i18n="ov.k1">stages en entreprise</p></article>
+          <article class="visual card-kpi"><p class="k-v"><span class="count" data-to="6">0</span></p><p class="k-l" data-i18n="ov.k2">projets livrés</p></article>
+          <article class="visual card-kpi"><p class="k-v"><span class="count" data-to="2">0</span></p><p class="k-l" data-i18n="ov.k3">ERP pratiqués (SAP, Odoo)</p></article>
+          <article class="visual card-kpi"><p class="k-v"><span class="count" data-to="1">0</span></p><p class="k-l" data-i18n="ov.k4">WMS développé (Flask + SQL)</p></article>
+
+          <article class="visual dax">
+            <p class="v-title" data-i18n="ov.dax">Mesure DAX</p>
+<pre class="mono"><code><span class="c-m">Valeur Candidat</span> =
+<span class="c-f">VAR</span> Terrain = <span class="c-f">COUNTROWS</span>( Stages )
+<span class="c-f">VAR</span> Outils  = <span class="c-f">DISTINCTCOUNT</span>( Competences[Outil] )
+<span class="c-f">RETURN</span>
+    <span class="c-f">IF</span>( [Disponible] = <span class="c-s">"Janv. 2027"</span>,
+        Terrain * Outils,
+        <span class="c-s">"Contactez-moi quand même"</span> )</code></pre>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== Page 2 : explorer avec segments ===== -->
+      <section class="page" id="explorer">
+        <header class="page-h">
+          <h2 class="page-title" data-i18n="ex.title">Explorer : expériences &amp; projets</h2>
+          <p class="page-sub" data-i18n="ex.sub">Cliquez sur un outil : le rapport se filtre et montre où je l'ai utilisé.</p>
+        </header>
+        <div class="slicer visual" role="group" aria-label="Filtre par outil">
+          <p class="v-title"><span data-i18n="ex.slicer">Segment · Outil</span> <span class="mono slicer-count" id="slicerCount"></span></p>
+          <div class="slicer-btns" id="slicer"></div>
+        </div>
+        <div class="items" id="items"></div>
+      </section>
+
+      <!-- ===== Page 3 : Gantt ===== -->
+      <section class="page" id="parcours">
+        <header class="page-h">
+          <h2 class="page-title" data-i18n="ga.title">Parcours · diagramme de Gantt</h2>
+          <p class="page-sub" data-i18n="ga.sub">2020 → 2027. Survolez une barre pour le détail.</p>
+        </header>
+        <div class="visual gantt-wrap">
+          <div class="gantt" id="gantt"></div>
+        </div>
+      </section>
+
+      <!-- ===== Page 4 : matrice ===== -->
+      <section class="page" id="matrice">
+        <header class="page-h">
+          <h2 class="page-title" data-i18n="mx.title">Compétences · matrice outil × contexte</h2>
+          <p class="page-sub" data-i18n="mx.sub">Chaque case pleine est un usage réel. Cliquez sur une ligne pour filtrer la page Explorer.</p>
+        </header>
+        <div class="visual matrix-wrap">
+          <table class="matrix" id="matrix"></table>
+          <p class="legend mono"><span class="lg l2"></span><span data-i18n="mx.l2">usage principal</span><span class="lg l1"></span><span data-i18n="mx.l1">usage ponctuel</span><span class="lg l3"></span><span data-i18n="mx.l3">certifié</span></p>
+        </div>
+        <div class="grid-2">
+          <article class="visual">
+            <p class="v-title" data-i18n="mx.lang">Langues</p>
+            <ul class="hbars">
+              <li><span data-i18n="mx.fr">Français</span><i style="--w:100%"></i><b>C2</b></li>
+              <li><span data-i18n="mx.ar">Arabe</span><i style="--w:100%"></i><b data-i18n="mx.native">Natif</b></li>
+              <li><span data-i18n="mx.en">Anglais</span><i style="--w:72%"></i><b>B2</b></li>
+            </ul>
+          </article>
+          <article class="visual">
+            <p class="v-title" data-i18n="mx.cert">Certifications</p>
+            <ul class="certs">
+              <li><b>SAP</b><span>Business Processes in SAP S/4HANA Sourcing and Procurement</span></li>
+              <li><b>LSS</b><span>Lean Six Sigma Green Belt · Udemy</span></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== Page 5 : modèle de données ===== -->
+      <section class="page" id="modele">
+        <header class="page-h">
+          <h2 class="page-title" data-i18n="md.title">Modèle de données</h2>
+          <p class="page-sub" data-i18n="md.sub">Un schéma en étoile : une table de faits au centre, quatre dimensions autour.</p>
+        </header>
+        <div class="visual model-wrap">
+          <svg class="model" id="model" viewBox="0 0 900 520" role="img" aria-label="Schéma en étoile du profil"></svg>
+        </div>
+      </section>
+
+      <!-- ===== Page 6 : requête SQL ===== -->
+      <section class="page" id="contact">
+        <header class="page-h">
+          <h2 class="page-title" data-i18n="sq.title">Requête : me contacter</h2>
+          <p class="page-sub" data-i18n="sq.sub">Exécutez la requête pour obtenir mes coordonnées.</p>
+        </header>
+        <div class="visual console">
+          <div class="console-bar mono"><span>SQL · candidats.db</span><button class="btn btn-yellow btn-sm" id="runSql">▶ <span data-i18n="sq.run">Exécuter</span></button></div>
+<pre class="mono sql" id="sql"><span class="c-f">SELECT</span> nom, email, telephone, linkedin, cv
+<span class="c-f">FROM</span>   candidats
+<span class="c-f">WHERE</span>  dispo = <span class="c-s">'2027-01'</span>
+  <span class="c-f">AND</span>  competences <span class="c-f">LIKE</span> <span class="c-s">'%Power BI%SAP%'</span>;</pre>
+          <div class="result" id="result" hidden>
+            <p class="mono res-meta" id="resMeta"></p>
+            <div class="res-table-wrap">
+              <table class="res-table">
+                <thead><tr><th>nom</th><th>email</th><th>telephone</th><th>linkedin</th><th>cv</th></tr></thead>
+                <tbody><tr>
+                  <td>Nafie Alami</td>
+                  <td><a href="mailto:nafieddhy@gmail.com">nafieddhy@gmail.com</a></td>
+                  <td><a href="tel:+33758698142">+33 7 58 69 81 42</a></td>
+                  <td><a href="https://linkedin.com/in/nafie-alami/" target="_blank" rel="noopener">nafie-alami</a></td>
+                  <td><a href="CV_Nafie_ALAMI.pdf" target="_blank" rel="noopener">CV.pdf</a></td>
+                </tr></tbody>
+              </table>
+            </div>
+            <div class="res-actions">
+              <a class="btn btn-yellow" href="mailto:nafieddhy@gmail.com?subject=Stage%20Data%20%2F%20ERP%20-%20janvier%202027" data-i18n="sq.mail">Écrire un email</a>
+              <a class="btn btn-ghost" href="https://linkedin.com/in/nafie-alami/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="foot mono">Nafie_Alami_rapport.pbix · © 2026 · <span data-i18n="ft.loc">Metz, France · Permis B</span></footer>
+    </main>
+  </div>
+
+  <div class="tooltip mono" id="tip" role="tooltip"></div>
+  <script src="app.js"></script>
+</body>
+</html>
