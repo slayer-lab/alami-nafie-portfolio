@@ -30,10 +30,8 @@
     's6.d': 'DMAIC project at a Renault and Stellantis supplier: diagnosis of the Stamping and Cutting workshops (VSM, SIPOC, Pareto, Ishikawa, 5 Whys), then design of a Milk Run / Mizusumashi system. I also ran a benchmark of 4 suppliers, wrote the specifications, built sizing tools (Excel VBA, Python) and the business case.',
     's7.t': "M2 OPSyL, Logistics Systems Organisation and Management", 's7.o': 'Université de Lorraine, UFR MIM · modelling, simulation and optimisation of logistics systems.',
     's8.m': 'January 2027 · Final destination', 's8.t': 'Your company?', 's8.d': '6-month internship. Supply chain, continuous improvement, methods or operations consulting.', 's8.cta': 'Book this slot',
-    'kpi.tag': 'Dashboard', 'kpi.title': 'Results you can measure', 'kpi.lead': 'These numbers come from my internships, not from my intentions.',
-    'kpi.gain': 'Annual savings · Tuyauto Milk Run', 'kpi.payback': 'Payback period', 'kpi.years': 'yr', 'kpi.paybackNote': 'approved business case',
-    'kpi.route': 'Route designed', 'kpi.stops': 'stops', 'kpi.routeNote': '4 carts · 24-min cycle',
-    'kpi.delay': 'Delivery lead time · GEODIS', 'kpi.cost': 'Transport costs · GEODIS', 'kpi.lss': 'DMAIC target · LSS project', 'kpi.lssNote': 'on a budget, as a team',
+    'kpi.tag': 'Dashboard', 'kpi.title': 'Results you can measure', 'kpi.lead': 'One key figure per experience, from my internships and projects.',
+    'kpi.n1': 'saved per year', 'kpi.n2': 'delivery lead time', 'kpi.app': '&nbsp;WMS', 'kpi.n3': 'built from scratch', 'kpi.n4': 'budget target (DMAIC)',
     'wh.tag': 'Skills warehouse', 'wh.title': 'Every skill in its slot',
     'wh.lead': "Smart slotting, just like the WMS I built. Click a bin to see where the skill was used.",
     'wh.pickTitle': 'Select a bin', 'wh.pickHint': 'Each bin holds one skill. Locations are coded by aisle, level and position, like in a warehouse.',
@@ -202,7 +200,6 @@
     requestAnimationFrame(step);
   }
   const dash = $('.dash');
-  $$('.bars span').forEach((b, i) => b.style.setProperty('--i', i));
   new IntersectionObserver((entries, obs) => {
     entries.forEach(e => {
       if (!e.isIntersecting) return;
